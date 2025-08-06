@@ -78,7 +78,7 @@ export default function App() {
   }, 0);
 
   useEffect(function () {
-    fetch("http://localhost:8000/questions")
+    fetch("https://my-json-server.typicode.com/albertozelaya5/reactQuizApi/db")
       .then((res) => {
         if (!res.ok) throw new Error("puta la cagaste 💥💥🔴");
         return res.json();
