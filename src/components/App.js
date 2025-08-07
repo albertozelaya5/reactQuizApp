@@ -83,7 +83,7 @@ export default function App() {
         if (!res.ok) throw new Error("puta la cagaste 💥💥🔴");
         return res.json();
       })
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
+      .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
 
