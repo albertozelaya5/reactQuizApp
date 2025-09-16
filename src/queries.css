@@ -9,11 +9,15 @@ Font sizes:
 1.8rem
 1.6rem
 
-Spacing:
+## Spacing:
 3.2rem
 2.8rem
 2.4rem
 1.6rem
+
+## Letter spacing:
+- Small: 0.2px
+- Medium: 0.15px
 
 */
 
@@ -61,6 +65,7 @@ Spacing:
   /* QUIZ PART */
   .progress {
     font-size: 1.6rem;
+    margin-bottom: 6.4rem;
   }
 
   progress {
@@ -75,6 +80,27 @@ Spacing:
   .progress p:last-child {
     transform: translateX(-50%);
   }
+
+  .progress + div {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .result {
+    width: 85%;
+    margin: 0 auto 2.4rem auto;
+  }
+
+  /* FOOTER */
+
+  .timer {
+    width: auto;
+  }
 }
 
 /* 
@@ -84,3 +110,74 @@ Spacing:
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+
+/* 544px MOBILE DEVICES */
+@media (max-width: 34em) {
+  body {
+    padding: 1.8rem 2.4rem;
+  }
+
+  .app {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .app-header {
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .progress {
+    margin-bottom: 5.6rem;
+  }
+
+  .main,
+  progress {
+    width: 100%;
+  }
+
+  .progress p:not(:last-child) {
+    transform: translateX(0%);
+  }
+
+  .progress p:last-child {
+    transform: translateX(0);
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3,
+  h4 {
+    margin-bottom: 3.2rem;
+  }
+
+  h4 {
+    letter-spacing: 0.15px;
+  }
+
+  .progress + div {
+    width: 100%;
+  }
+
+  .options {
+    gap: 1.4rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+  }
+
+  .btn-ui {
+    letter-spacing: 0.3px;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    padding: 1.8rem 3.6rem;
+  }
+}
